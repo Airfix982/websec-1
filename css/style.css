@@ -1,133 +1,133 @@
-    body {
-        background-color: #fff;
-        font-family: monospace !important;
-    }
+body {
+    background-color: #fff;
+    font-family: monospace !important;
+}
 
-    .calculator {
-        width: 550px;
-        border-radius: 10px;
-        margin: 23px 28px 0 0;
-        padding: 15px 10px;
-        background-color: #b9ffc1;
+.calculator {
+    width: 550px;
+    border-radius: 10px;
+    margin: 23px 28px 0 0;
+    padding: 15px 10px;
+    background-color: #b9ffc1;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.red-border
+{
+    border: 1.5px dashed red;
+    border-radius: 10px;
+    color: red;
+}
+
+.number {
+    background-color: transparent;
+    
+    outline: none; 
+    text-align: start;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 200px;
+    height: 35px;
+    
+}
+
+.select
+{
+    width: 80px;
+    height: 40px;
+    line-height: 35px;
+}
+
+.number, .select {
+    font-family: monospace !important;
+}
+
+.calc-button {
+    width: 160px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.result-section {
+    width: 535px;
+    min-height: 70px;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: monospace !important;
+}
+
+.result-section p {
+    margin: 5px 0;
+    white-space: normal;
+    word-wrap: break-word;
+    font-family: monospace !important;
+}
+
+.prev-res {
+    color: rgb(255, 89, 89);
+}
+
+.curr-res {
+    color: red;
+}
+
+.error {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 650px) {
+    .calculator
+    {
+        width: 220px;
     }
 
     .input-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
         align-items: center;
-        margin: 0 0 2rem 0;
-        padding: 0;
+        margin-bottom: 10px;
     }
-
-    .red-border
-    {
-        border: 1.5px dashed red;
-        border-radius: 10px;
-        color: red;
-    }
-
+    
     .number {
-        background-color: transparent;
-        
-        outline: none; 
-        text-align: start;
-        padding-left: 10px;
-        font-size: 16px;
         width: 200px;
-        height: 35px;
-        
     }
-
+    
+    
     .select
     {
         width: 80px;
-        height: 40px;
-        line-height: 35px;
     }
-
-    .number, .select {
-        font-family: monospace !important;
-    }
-
     .calc-button {
-        width: 160px;
-        height: 35px;
-        font-size: 16px;
-        text-align: center;
-        display: block;
-        margin: 0 auto 30px;
-        background-color: transparent;
-        cursor: pointer;
+        width: 80px;
+        margin-bottom: 10px;
     }
 
     .result-section {
-        width: 535px;
-        min-height: 70px;
-        font-size: 16px;
-        background-color: transparent;
-        margin: 0px;
-        padding: 0;
+        width: 200px;
+        margin: 0;
         padding-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: monospace !important;
+        padding-right: 2px;
+        min-height: 80px;
     }
-
-    .result-section p {
-        margin: 5px 0;
-        white-space: normal;
-        word-wrap: break-word;
-        font-family: monospace !important;
-    }
-
-    .prev-res {
-        color: rgb(255, 89, 89);
-    }
-
-    .curr-res {
-        color: red;
-    }
-
-    .error {
-        border: 2px solid red;
-        background-color: rgba(255, 0, 0, 0.1);
-    }
-
-    @media screen and (max-width: 650px) {
-        .calculator
-        {
-            width: 220px;
-        }
-
-        .input-section {
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .number {
-            width: 200px;
-        }
-        
-        
-        .select
-        {
-            width: 80px;
-        }
-        .calc-button {
-            width: 80px;
-            margin-bottom: 10px;
-        }
-
-        .result-section {
-            width: 200px;
-            margin: 0;
-            padding-left: 10px;
-            padding-right: 2px;
-            min-height: 80px;
-        }
-    }
+}
